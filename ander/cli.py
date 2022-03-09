@@ -3,16 +3,12 @@ from typing import Set
 import fire
 
 
-def ander(filename1: str, filename2: str, verbose: bool = False) -> None:
+def ander(filename1: str, filename2: str) -> Set[str]:
     with open(filename1) as f1, open(filename2) as f2:
-        set1: Set[str] = set([s.strip() for s in f1.readlines()])
-        set2: Set[str] = set([s.strip() for s in f2.readlines()])
+        set1: Set[str] = set([s.strip() for s in f1.readlines() if s.strip() != ""])
+        set2: Set[str] = set([s.strip() for s in f2.readlines() if s.strip() != ""])
     res_set: Set[str] = set1.intersection(set2)
-    for s in res_set:
-        print(s)
-    if verbose:
-        print(f"#Intersected elements: {len(res_set):,d}")
-    return
+    return res_set
 
 
 def main() -> int:

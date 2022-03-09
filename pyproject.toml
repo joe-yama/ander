@@ -16,6 +16,7 @@ ander = "ander.cli:main"
 
 [tool.poetry.dev-dependencies]
 pysen = {version = "^0.10.1", extras = ["lint"]}
+pytest = "^7.0.1"
 
 [tool.pysen]
 version = "0.10"
