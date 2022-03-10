@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "ander"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "A CLI tool to identify elements that are contained in both file"
 license = "MIT"
+readme = "README.md"
 authors = ["Josuke Yamane <s1r0mqme@gmail.com>"]
 packages = [
   { include = "ander" }
@@ -19,6 +20,7 @@ ander = "ander.cli:main"
 [tool.poetry.dev-dependencies]
 pysen = {version = "^0.10.1", extras = ["lint"]}
 pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
 
 [tool.pysen]
 version = "0.10"
