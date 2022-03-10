@@ -2,10 +2,12 @@
 name = "ander"
 version = "0.1.0"
 description = ""
-authors = ["Josuke Yamane <josuke_yamane@mail.toyota.co.jp>"]
+license = "MIT"
+authors = ["Josuke Yamane <s1r0mqme@gmail.com>"]
 packages = [
   { include = "ander" }
 ]
+repository = "https://github.com/joe-yama/ander"
 
 [tool.poetry.dependencies]
 python = ">=3.6, <4"
