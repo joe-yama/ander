@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ander"
-version = "0.1.2"
+version = "0.2.0"
 description = "A CLI tool to identify elements that are contained in both file"
 license = "MIT"
 readme = "README.md"
